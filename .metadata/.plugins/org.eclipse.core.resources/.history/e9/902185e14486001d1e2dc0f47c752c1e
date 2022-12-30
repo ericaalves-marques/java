@@ -1,0 +1,137 @@
+package supercalculadora;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.JButton;
+import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class SuperCalculadora extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					SuperCalculadora frame = new SuperCalculadora();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public SuperCalculadora() { //Construtor
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 823, 349);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel_1 = new JLabel("Super Calculadora");
+		lblNewLabel_1.setBounds(172, 10, 382, 50);
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setFont(new Font("Sitka Small", Font.BOLD, 39));
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Informe um valor:");
+		lblNewLabel_2.setBounds(505, 25, 120, 19);
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		contentPane.add(lblNewLabel_2);
+		
+		JSpinner txtNum = new JSpinner();
+		txtNum.setBounds(630, 23, 59, 24);
+		txtNum.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		txtNum.setModel(new SpinnerNumberModel(1, -50, 50, 1));
+		contentPane.add(txtNum);
+		
+		JPanel panCalc = new JPanel();
+		panCalc.setBounds(94, 81, 480, 27);
+		contentPane.add(panCalc);
+		panCalc.setVisible(false);
+		
+		JButton btnCalc = new JButton("Calcular");
+		btnCalc.setBounds(579, 65, 133, 59);
+		btnCalc.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int num = Integer.parseInt(txtNum.getValue().toString());
+				int r = num % 2;
+				lblResto.setText(Integer.toString(r));
+				panCalc.setVisible(true);
+			}
+		});
+		btnCalc.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		btnCalc.setIcon(new ImageIcon("C:\\Users\\User\\Desktop\\+.png"));
+		contentPane.add(btnCalc);
+		
+		
+		
+		JLabel lblNewLabel = new JLabel("Resto da divis\u00E3o por 2");
+		panCalc.add(lblNewLabel);
+		
+		JLabel lblResto = new JLabel("0");
+		lblResto.setForeground(new Color(0, 0, 255));
+		lblResto.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panCalc.add(lblResto);
+		
+		JLabel lblNewLabel_10 = new JLabel("Elevado ao cubo");
+		panCalc.add(lblNewLabel_10);
+		
+		JLabel lblCubo = new JLabel("0");
+		lblCubo.setForeground(new Color(0, 0, 255));
+		lblCubo.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panCalc.add(lblCubo);
+		
+		JLabel lblNewLabel_11 = new JLabel("Raiz Quadrada");
+		panCalc.add(lblNewLabel_11);
+		
+		JLabel lblRaizQ = new JLabel("0");
+		lblRaizQ.setForeground(new Color(0, 0, 255));
+		lblRaizQ.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panCalc.add(lblRaizQ);
+		
+		JLabel lblNewLabel_5 = new JLabel("Raiz C\u00FAbica");
+		panCalc.add(lblNewLabel_5);
+		
+		JLabel lblRaizC = new JLabel("0");
+		lblRaizC.setForeground(new Color(0, 0, 255));
+		lblRaizC.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panCalc.add(lblRaizC);
+		
+		JLabel lblNewLabel_6 = new JLabel("Valor absoluto");
+		panCalc.add(lblNewLabel_6);
+		
+		JLabel lblAbs = new JLabel("0");
+		lblAbs.setForeground(new Color(0, 0, 139));
+		lblAbs.setFont(new Font("Tahoma", Font.BOLD, 14));
+		panCalc.add(lblAbs);
+		
+		JLabel lblNewLabel_12 = new JLabel("");
+		lblNewLabel_12.setBounds(324, 122, 250, 177);
+		lblNewLabel_12.setVerticalAlignment(SwingConstants.TOP);
+		contentPane.add(lblNewLabel_12);
+		lblNewLabel_12.setIcon(new ImageIcon("C:\\Users\\User\\Desktop\\calculadora2.png"));
+	}
+
+}

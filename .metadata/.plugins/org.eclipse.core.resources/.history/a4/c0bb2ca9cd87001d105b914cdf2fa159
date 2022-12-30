@@ -1,0 +1,10 @@
+package programaidade;
+
+public class ProgramaIdade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

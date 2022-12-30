@@ -1,0 +1,13 @@
+package comparacaoString;
+
+public class ComparacaoString {
+	public static void main(String[] args) {
+		String nome1 = "Érica";
+		String nome2 = "Érica";
+		String nome3 = new String("Erica");
+		String res;
+		res = (nome1==nome2)? "igual":"diferente";
+		System.out.println(res);
+	}
+
+}

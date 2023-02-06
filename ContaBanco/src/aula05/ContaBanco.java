@@ -112,7 +112,7 @@ public class ContaBanco {
 			v = 12;
 		}else if(this.tipo == "CP") {
 			v = 20;
-		}if (this.status == true) {
+		}else if (this.status == true) {
 			if(this.saldo > v) {
 			setSaldo(getSaldo() - v);
 			}else {

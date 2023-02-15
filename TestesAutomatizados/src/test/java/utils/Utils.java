@@ -6,15 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Utils {
-		public static WebDriver driver;
+	public static WebDriver driver;
+	
+	public static void acessarSistema() {
+		System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
+		driver = new ChromeDriver(); 
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		public static void acessarSistema() {
-			System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver");
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			
-			driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		}
-
+		driver.get("https://www.saucedemo.com/");
+	}
 }

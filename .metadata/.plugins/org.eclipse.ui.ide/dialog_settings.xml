@@ -13,9 +13,9 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\User\Desktop\HENRIQUE_COUTRIM_LEITE_Desafio_Web"/>
 			<item value="C:\Users\User\Downloads\Agenda-de-contatos-integra-o-Java-banco-de-dados-MySQL-master"/>
 			<item value="C:\Users\User\Desktop\HENRIQUE_COUTRIM_LEITE_Desafio_Mobile"/>
-			<item value="C:\Users\User\Desktop\HENRIQUE_COUTRIM_LEITE_Desafio_Web"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

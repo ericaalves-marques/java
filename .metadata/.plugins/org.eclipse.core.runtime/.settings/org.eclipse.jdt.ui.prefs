@@ -1,5 +1,6 @@
 command=C\:\\Program Files\\Java\\jdk-19\\bin\\javadoc.exe
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="aula54.Data"><rhs name\="aula54.Data"/></lhs><lhs name\="java.lang.Enum"><rhs name\="java.util.concurrent.TimeUnit"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="java.util.concurrent.TimeUnit"/></lhs></history>
+content_assist_autoactivation_triggers_java=abcdefghijklmnopqrstuvwxyz.
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="aula54.Data"><rhs name\="aula54.Data"/></lhs><lhs name\="java.lang.Enum"><rhs name\="java.util.concurrent.TimeUnit"/><rhs name\="io.cucumber.junit.CucumberOptions$SnippetType"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="java.util.concurrent.TimeUnit"/><rhs name\="io.cucumber.junit.CucumberOptions$SnippetType"/></lhs><lhs name\="org.openqa.selenium.SearchContext"><rhs name\="org.openqa.selenium.chrome.ChromeDriver"/></lhs><lhs name\="org.openqa.selenium.WebDriver"><rhs name\="org.openqa.selenium.chrome.ChromeDriver"/></lhs><lhs name\="pageObjects.LoginPage"><rhs name\="pageObjects.LoginPage"/></lhs></history>
 content_assist_number_of_computers=13
 eclipse.preferences.version=1
 org.eclipse.jdt.internal.ui.navigator.layout=2

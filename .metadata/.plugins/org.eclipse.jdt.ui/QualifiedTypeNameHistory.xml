@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
@@ -17,4 +16,23 @@
     <fullyQualifiedTypeName name="aula43.DiaSemana"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.pt.Dado"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions.SnippetType"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.Before"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.After"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.json.StaticInitializerCoercer"/>
+    <fullyQualifiedTypeName name="net.bytebuddy.implementation.MethodDelegation.ImplementationDelegate.Compiled.ForStaticCall"/>
+    <fullyQualifiedTypeName name="io.cucumber.datatable.dependency.com.fasterxml.jackson.core.sym.Name"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.pt.Quando"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.pt.Entao"/>
+    <fullyQualifiedTypeName name="pageObjects.LoginPage"/>
+    <fullyQualifiedTypeName name="utils.Utils"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 </qualifiedTypeNameHistroy>
